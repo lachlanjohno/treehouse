@@ -1,0 +1,90 @@
+* {
+  font-family: Helvetica, Arial;
+}
+body {
+  background-color: rgb(58, 193, 98);
+}
+
+h1 {
+  text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.hero-header {
+  color: #f1faee;
+}
+
+.another-btn {
+  color: #fff;
+  text-shadow: 1px 1px 1px rgba(50, 50, 50, 0.3);
+  width: 12em;
+  max-height: 75px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 15px 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.another-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.quote-container {
+  margin: auto;
+  padding: 25px 25px 15px 55px;
+  background: rgba(0, 0, 0, 0.1);
+  border-left: 5px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0 4px 4px 0;
+  max-width: 56%;
+}
+
+
+.quote-text {
+  color: #f1faee;
+}
+
+.quote-text::before {
+  content: '“';
+  padding-right: 0.6rem;
+  font-size: 2rem;
+}
+
+.quote-text::after {
+  content: '”';
+  padding-left: 0.6rem;
+  font-size: 2rem;
+}
+
+.quote-details {
+  margin-left: 50%;
+  color: #cfdbd5;
+}
+
+@media screen and (min-width:600px) {
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 4rem;
+  }
+
+  .quote-details {
+    margin-left: 70%;
+  }
+}
